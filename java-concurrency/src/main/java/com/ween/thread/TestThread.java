@@ -12,7 +12,7 @@ public class TestThread {
     }
 
     private static void testByExtends() {
-        WicketThread wicketThread = new WicketThread();
+        TicketThread wicketThread = new TicketThread();
         Thread thread1 = new Thread(wicketThread, "001");
         Thread thread2 = new Thread(wicketThread, "002");
         Thread thread3 = new Thread(wicketThread, "003");
@@ -38,7 +38,7 @@ public class TestThread {
     }
 
     private static void testByRunnable() {
-        WicketRunnable runnable = new WicketRunnable();
+        TicketRunnable runnable = new TicketRunnable();
         Thread thread1 = new Thread(runnable, "001");
         Thread thread2 = new Thread(runnable, "002");
         Thread thread3 = new Thread(runnable, "003");

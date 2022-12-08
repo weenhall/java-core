@@ -3,9 +3,10 @@ package com.ween.thread;
 /**
  * @author weenhall
  */
-public class WicketRunnable implements Runnable {
+public class TicketThread extends Thread {
     private int ticket = 10;
 
+    @Override
     public void run() {
         String cName = Thread.currentThread().getName();
         synchronized (this) {
