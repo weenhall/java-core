@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 
 public class StreamExample {
 
-	private static List<Fruit> favorite = new ArrayList<>();
+	private static final List<Fruit> favorite = new ArrayList<>();
 
 	static {
 		favorite.add(new Fruit(1, "APPLE", 100f));

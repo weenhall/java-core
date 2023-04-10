@@ -17,9 +17,7 @@ public class LambdaExpressionExample {
         };
         withoutLambda.draw();
         //withLambda
-        Drawable withLambda=()->{
-            System.out.println("Drawing withLambda:"+width);
-        };
+        Drawable withLambda=()-> System.out.println("Drawing withLambda:"+width);
         withLambda.draw();
     }
 }
