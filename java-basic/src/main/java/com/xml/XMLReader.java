@@ -37,7 +37,10 @@ public class XMLReader {
     }
 
     public static void main(String[] args) {
-        String str= "<?xml version=\"1.0\" encoding=\"UTF-16\"?>\n<soap:Body xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ns1=\"http://haulinterface.overhaul.webservice.beans.webclient.psdi\"><ns1:getOverhaulTypeByYearResponse xmlns=\"\" xmlns:ns1=\"http://haulinterface.overhaul.webservice.beans.webclient.psdi\"><out>[{\"typea\":\"\",\"typeb\":\"\",\"typec\":\"\",\"inspection\":\"\",\"overhaul\":\"\",\"others\":\"\",\"typea_complate\":\"\",\"typeb_complate\":\"\",\"typec_complate\":\"\",\"inspection_complate\":\"\",\"overhaul_complate\":\"\",\"others_complate\":\"\"}]</out></ns1:getOverhaulTypeByYearResponse></soap:Body>";
+        String str= "<?xml version=\"1.0\" encoding=\"UTF-16\"?>\n<soap:Body xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ns1=\"http://xxxx.sdkflaj.webservice"
+            + ".beans.webclient.psdi\"><ns1:getTodayDegree  xmlns=\"\" xmlns:ns1=\"http://xxxx.sdkflaj.webservice.beans.webclient.psdi\"><out>[{\"typea\":\"\",\"typeb\":\"\","
+            + "\"typec\":\"\",\"inspection\":\"\",\"overhaul\":\"\",\"others\":\"\",\"typea_complate\":\"\",\"typeb_complate\":\"\",\"typec_complate\":\"\","
+            + "\"inspection_complate\":\"\",\"overhaul_complate\":\"\",\"others_complate\":\"\"}]</out></ns1:getTodayDegree></soap:Body>";
         parseSoapXml(str);
     }
 }
